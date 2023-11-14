@@ -1,5 +1,8 @@
 # Hangman
-Spencer Petty 11/13/2023
+Spencer Petty
+
+11/13/2023
+
 Time spent on the challenge: 3 hours 50 minutes
 
 This is a simple Hangman game, written using HTML and JavaScript. The player is asked to guess a secret word which is chosen from a bank of 10 possible words and tries to guess it in as few tries as possible.
