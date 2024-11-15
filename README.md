@@ -6,7 +6,10 @@ Hangman Coding Challenge
 
 ## Recent changes 11/15/2024
 I did this challenge this same time last year, so I talked to Joe and he said I could work on improving the hangman program rather than doing it again from scratch.
-The one thing I still haven't learned is Object Oriented Programming, so I'm looking forward to learn that as I continue in the IS Program.
+
+Things I would have done better given more time:
+* Used CSS to draw the gallows and Hangman rather than images
+* Used more object-oriented programming (I still need to learn this)
 
 ### Improvements made since last time (~2.5 hours of extra work)
 1. Created an option to receive a random word from an API,
