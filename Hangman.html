@@ -8,10 +8,12 @@
     <style>
         .center {
             text-align: center;
-            margin: 200px;
-            border-style: double;
-            border-width: 10px;
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            background-color: rgba(255, 162, 0, 0.629)
         }
+        
         /* just a little celebration fun for when you win--NOT my original CSS animation code (everything else is my own code though) */
         .text-rainbow-animation {
   background-image: 
@@ -28,21 +30,29 @@
 }
     </style>
 </head>
-<body style="background-color: bisque;">
+<body style="background-image: url('wildWest.jpg');">
     <div class="center">
     <h1 id="mainHeader">Welcome to Hangman!</h1> <!-- The main message area -->
 
     <h2 id="secondHeader"></h2> <!-- This is where the word being guessed will display-->
 
-    <button id="gameStart" onclick="gameStart();">Start game</button>   <!-- The button to start the game -->
+    <button id="gameStart" onclick="gameStart(document.getElementById('randCheck').checked);">Start game</button>   <!-- The button to start the game -->
     
     <input type="text" id="playerInput" name="playerInput" placeholder="Guess a letter!"> <!-- This is where the player can input guesses -->
 
-    <button onclick="playerGuess();">Guess</button>
+    <button onclick="playerGuess();" id="guessBtn">Guess</button>
+    <button onclick="location.reload()" id="playAgainBtn" hidden>Play Again</button>
+    <button onclick="window.location.replace('https://www.google.com')" id="quitBtn" hidden>Quit</button>
+    <br>
+    <label for="randCheck" id="randLabel">Random word?</label>
+    <input type="checkbox" id="randCheck">
+
     <h3 id="numOfGuesses"></h3> <!-- This displays the total number of guesses -->
     <h3 id="correctGuesses"></h3> <!-- This displays the correct guesses that have been made -->
     <h3 id="incorrectGuesses"></h3> <!-- And here are the incorrect guesses -->
 
+    <img src="hangmanDrawing/h0.png" alt="hangman" id="hangImg" style="margin: auto; width: 265px; height: 300px;">
     </div>
+    
 </body>
 </html>
